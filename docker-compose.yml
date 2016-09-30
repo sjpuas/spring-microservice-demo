@@ -1,0 +1,16 @@
+version: "2"
+services:
+ eureka-server:
+    build: eureka-server
+    image: sjpuas/eureka-server
+    container_name: eureka-server
+    ports:
+      - "8761"
+ hello-microservice:
+     build: hello-microservice
+     image: sjpuas/hello-microservice
+ gateway-api:
+     build: gateway-api
+     image: sjpuas/gateway-api
+     ports:
+       - "80:9000"

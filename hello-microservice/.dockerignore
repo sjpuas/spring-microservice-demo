@@ -1,0 +1,4 @@
+src/
+*.iml
+target/*
+!target/hello-microservice-0.0.1.jar

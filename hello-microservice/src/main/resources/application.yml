@@ -1,0 +1,11 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: hello-service
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-server:8761/eureka/
+  instance:
+    preferIpAddress: true

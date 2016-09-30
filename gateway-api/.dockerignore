@@ -1,0 +1,4 @@
+src/
+*.iml
+target/*
+!target/gateway-api.jar

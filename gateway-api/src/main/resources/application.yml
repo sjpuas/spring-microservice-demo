@@ -1,0 +1,18 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: api-gateway
+zuul:
+  routes:
+     hello:
+        path: /hello
+        serviceId: hello-service
+ribbon:
+  eureka:
+   enabled:true
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-server:8761/eureka/
